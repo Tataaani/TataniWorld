@@ -153,6 +153,79 @@ body {
   letter-spacing: 0px;
   text-align: left;
   padding-top: 94px;
+  padding-bottom: 24px;
+}
+.main .main__mini-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 788px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 72px;
+}
+.main .main__container_game {
+  display: flex;
+  gap: 32px;
+}
+.main .main__container_game .main__game {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.main .main__container_game .main__game_small {
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+}
+.main .main__container_game .main__game_img {
+  width: 378px;
+  height: 314px;
+}
+.main .main__container_game .main__game_name {
+  padding: 32px 32px 36px 32px;
+}
+.main .main__container_game .main__game_name-p-container {
+  width: 108px;
+  height: 36px;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.main .main__container_game .main__game_name-p {
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+.main .main__container_game .main__game_name-h2 {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: left;
+}
+.main .main__container_game .main__game_big {
+  width: 378px;
+  height: 512px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer {
