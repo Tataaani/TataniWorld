@@ -210,12 +210,11 @@ body {
             display: flex;
             flex-direction: column;
             gap: 32px;
-
+            padding-bottom: 50px;
         }
 
-        .main__game_small {
+        .main__game_cart {
             width: 378px;
-            height: 473px;
             border-radius: 30px;
             display: flex;
             flex-direction: column;
@@ -231,6 +230,32 @@ body {
 
         .main__game_name {
             padding: 32px 32px 36px 32px;
+            box-sizing: border-box;
+
+        }
+
+        .name1 {
+            height: 159px;
+        }
+
+        .name2 {
+            height: 198px;
+        }
+
+        .name3 {
+            height: 159px;
+        }
+
+        .name4 {
+            height: 237px;
+        }
+
+        .name5 {
+            height: 198px;
+        }
+
+        .name6 {
+            height: 237px;
         }
 
         .main__game_name-p-container {
@@ -261,15 +286,6 @@ body {
             text-align: left;
         }
 
-        .main__game_big {
-            width: 378px;
-            height: 512px;
-            border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
     }
 
 }
