@@ -21,6 +21,7 @@ a {
     background: rgba(225, 255, 143, 1);
     position: relative;
     z-index: -2;
+    overflow: hidden;
 
     .header__container {
         padding-top: 196px;

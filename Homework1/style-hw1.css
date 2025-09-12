@@ -22,6 +22,7 @@ a {
   background: rgb(225, 255, 143);
   position: relative;
   z-index: -2;
+  overflow: hidden;
 }
 .header .header__container {
   padding-top: 196px;
