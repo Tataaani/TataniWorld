@@ -4,8 +4,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -27,7 +32,7 @@ a {
 .header .header__container {
   padding-top: 196px;
 }
-.header .header__title_big {
+.header .header__container .header__title_big {
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
@@ -36,7 +41,7 @@ a {
   padding-bottom: 24px;
   box-sizing: border-box;
 }
-.header .header__title {
+.header .header__container .header__title {
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -46,7 +51,7 @@ a {
   padding-bottom: 48px;
   box-sizing: border-box;
 }
-.header .header__button {
+.header .header__container .header__button {
   font: inherit;
   width: 247px;
   height: 66px;
@@ -59,15 +64,16 @@ a {
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
+  text-align: center;
+  transition: all 1s;
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0%;
-  text-align: center;
   transition: all 1s;
 }
-.header .header__button:hover {
+.header .header__container .header__button:hover {
   background-color: transparent;
   color: rgb(0, 0, 0);
   cursor: url("img/cursor.svg"), pointer;
@@ -206,6 +212,9 @@ a {
   gap: 32px;
   padding-bottom: 50px;
   z-index: 3;
+}
+.main .main__container_game .main__game_link {
+  transition: all 1s;
 }
 .main .main__container_game .main__game_link:hover {
   transform: scale(1.1);
