@@ -360,6 +360,7 @@ a {
   line-height: 29px;
   text-align: center;
   box-sizing: border-box;
+  transition: all 1s;
 }
 .main .main__container-game_MINI .main__game-mini_button:hover {
   background-color: transparent;
