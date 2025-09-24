@@ -26,7 +26,6 @@ a {
   height: 710px;
   background: rgb(225, 255, 143);
   position: relative;
-  z-index: -2;
   overflow: hidden;
 }
 .header .header__container {
@@ -83,7 +82,6 @@ a {
   top: -336px;
   right: -424px;
   overflow: hidden;
-  z-index: -1;
 }
 .header .header__star1 {
   position: absolute;
@@ -161,20 +159,20 @@ a {
   position: relative;
   padding-top: 94px;
 }
-.main .main__star_big {
+.main .main__about-game .main__about-star_big {
   position: absolute;
   overflow: hidden;
   margin-left: 814px;
   z-index: 2;
 }
-.main .main__star_small {
+.main .main__about-game .main__about-star_small {
   position: absolute;
   overflow: hidden;
   margin-left: -90px;
   margin-top: 676px;
   z-index: 2;
 }
-.main .main__star_sred {
+.main .main__about-game .main__about-star_sred {
   position: absolute;
   overflow: hidden;
   margin-left: -74px;
@@ -200,6 +198,9 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-bottom: 72px;
+}
+.main .main__title_2 {
   padding-bottom: 72px;
 }
 .main .main__container_game {
@@ -229,30 +230,30 @@ a {
   background-color: white;
   transition: transform 0.3s ease;
 }
-.main .main__container_game .main__game_img {
+.main .main__container_game .main__game_cart .main__game_img {
   width: 378px;
   height: 314px;
 }
-.main .main__container_game .main__game_name {
+.main .main__container_game .main__game_cart .main__game_name {
   padding: 32px 32px 36px 32px;
   box-sizing: border-box;
 }
-.main .main__container_game .name1 {
+.main .main__container_game .main__game_cart .name1 {
   height: 159px;
 }
-.main .main__container_game .name2 {
+.main .main__container_game .main__game_cart .name2 {
   height: 198px;
 }
-.main .main__container_game .name3 {
+.main .main__container_game .main__game_cart .name3 {
   height: 159px;
 }
-.main .main__container_game .name4 {
+.main .main__container_game .main__game_cart .name4 {
   height: 237px;
 }
-.main .main__container_game .name5 {
+.main .main__container_game .main__game_cart .name5 {
   height: 198px;
 }
-.main .main__container_game .name6 {
+.main .main__container_game .main__game_cart .name6 {
   height: 237px;
 }
 .main .main__container_game .main__game_name-p-container {
@@ -278,6 +279,80 @@ a {
   font-size: 32px;
   font-weight: 700;
   text-align: left;
+}
+.main .main__mini-game {
+  position: relative;
+  padding-top: 46px;
+}
+.main .main__mini-game .main__mini-star_min {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 1158px;
+  margin-top: 40px;
+}
+.main .main__mini-game .main__mini-star_sred {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 1200px;
+  margin-top: 68px;
+}
+.main .main__container-game_MINI {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.main .main__container-game_MINI .main__game-mini_cart {
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+}
+.main .main__container-game_MINI .main__game-mini_name {
+  padding: 48px;
+  box-sizing: border-box;
+}
+.main .main__container-game_MINI .main__game-mini_h2 {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.main .main__container-game_MINI .main__game-mini_p {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 36px;
+}
+.main .main__container-game_MINI .main__game-mini_button {
+  width: 247px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.main .main__container-game_MINI .main__game-mini_button:hover {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  cursor: url("img/cursor.svg"), pointer;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
 }
 
 .footer {
