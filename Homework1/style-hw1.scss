@@ -344,12 +344,27 @@ a {
             margin-left: 1200px;
             margin-top: 68px;
         }
+
+        .main__mini-star_min-end {
+            position: absolute;
+            overflow: hidden;
+            margin-left: 1140px;
+            margin-bottom: -45px;
+        }
+
+        .main__mini-star_sred-end {
+            position: absolute;
+            overflow: hidden;
+            margin-left: 1195px;
+            margin-bottom: -65px;
+        }
     }
 
     .main__container-game_MINI {
         display: flex;
         flex-direction: column;
         gap: 32px;
+        padding-bottom: 144px;
 
         .main__game-mini_cart {
             width: 1200px;
@@ -362,6 +377,7 @@ a {
         }
 
         .main__game-mini_name {
+            width: 601px;
             padding: 48px;
             box-sizing: border-box;
         }
@@ -373,6 +389,8 @@ a {
             line-height: 100%;
             text-align: left;
             margin-bottom: 24px;
+            // межстрочный интервал для заголовка ниже
+            line-height: 1.2;
         }
 
         .main__game-mini_p {
@@ -414,10 +432,7 @@ a {
 
 
     }
-
 }
-
-
 
 .footer {
     background: rgba(189, 237, 53, 1);

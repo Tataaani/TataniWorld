@@ -296,10 +296,23 @@ a {
   margin-left: 1200px;
   margin-top: 68px;
 }
+.main .main__mini-game .main__mini-star_min-end {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 1140px;
+  margin-bottom: -45px;
+}
+.main .main__mini-game .main__mini-star_sred-end {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 1195px;
+  margin-bottom: -65px;
+}
 .main .main__container-game_MINI {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 144px;
 }
 .main .main__container-game_MINI .main__game-mini_cart {
   width: 1200px;
@@ -311,6 +324,7 @@ a {
   background-color: white;
 }
 .main .main__container-game_MINI .main__game-mini_name {
+  width: 601px;
   padding: 48px;
   box-sizing: border-box;
 }
@@ -321,6 +335,7 @@ a {
   line-height: 100%;
   text-align: left;
   margin-bottom: 24px;
+  line-height: 1.2;
 }
 .main .main__container-game_MINI .main__game-mini_p {
   color: rgb(32, 32, 39);
