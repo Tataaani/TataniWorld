@@ -386,4 +386,11 @@ a {
   line-height: 100%;
   letter-spacing: 0px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style-hw1.css.map */
