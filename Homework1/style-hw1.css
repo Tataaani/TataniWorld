@@ -316,7 +316,6 @@ a {
 }
 .main .main__container-game_MINI .main__game-mini_cart {
   width: 1200px;
-  height: 500px;
   border-radius: 30px;
   display: flex;
   justify-content: flex-start;
@@ -388,9 +387,111 @@ a {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .header__star-big_mobile {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    height: 648px;
+  }
+  .header__star-big {
+    display: none;
+  }
+  .header__star-big_mobile {
+    position: absolute;
+    top: -100px;
+    right: -114px;
+    overflow: hidden;
+  }
+  .header__poloca-scrolling-text-container {
+    height: 52px;
+    gap: 6;
+    padding: 16px 24px 16px 24px;
+  }
+  .header__poloca-scrolling-text-container .header__scrolling-text .header__poloca_title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header__poloca-scrolling-text-container .header__scrolling-text .header__star {
+    width: 19.34px;
+    height: 19.34px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .main__about-game {
+    display: none;
+  }
+  .main__mini-game .main__mini-star_min {
+    display: none;
+  }
+  .main__mini-game .main__mini-star_sred {
+    display: none;
+  }
+  .main__mini-game .main__container-game_MINI {
+    display: none;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_cart-mobile {
+    border-radius: 27.22px;
+    background-color: white;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_img-mobile {
+    width: 343px;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 29.04px 29.04px 32.67px 29.04px;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_h2-mobile {
+    color: rgb(32, 32, 39);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 16px;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_p-mobile {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 32px;
+    line-height: 1.2;
+  }
+  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_button-mobile {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    width: 285px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
   }
 }/*# sourceMappingURL=style-hw1.css.map */
