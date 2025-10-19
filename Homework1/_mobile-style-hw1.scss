@@ -1,5 +1,9 @@
 @media (min-width: 768px) {
-    .header__star-big_mobile {
+
+    .header__star-big_mobile,
+    .MOBILE-main__container-game_MINI,
+    .main__mini-star_min-end,
+    .main__mini-star_sred-end {
         display: none;
     }
 }
@@ -153,6 +157,7 @@
                     letter-spacing: 0px;
                     text-align: left;
                     padding-bottom: 16px;
+                    line-height: 1.2;
                 }
 
                 .main__game-mini_p-mobile {
