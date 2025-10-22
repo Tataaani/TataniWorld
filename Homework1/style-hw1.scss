@@ -254,7 +254,7 @@ a {
         }
 
         .main__game_cart {
-            width: 378px;
+            max-width: 378px;
             border-radius: 30px;
             display: flex;
             flex-direction: column;
@@ -368,7 +368,7 @@ a {
         padding-bottom: 144px;
 
         .main__game-mini_cart {
-            width: 1200px;
+            max-width: 1200px;
             // height: 500px;
             border-radius: 30px;
             display: flex;
@@ -379,7 +379,7 @@ a {
 
         .main__game-mini_name {
             width: 601px;
-            padding: 48px;
+            padding: 48px 48px 0px 48px;
             box-sizing: border-box;
         }
 
