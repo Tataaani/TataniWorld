@@ -38,7 +38,11 @@
             }
 
             .main__container_game {
-                gap: 10px;
+                gap: 16px;
+
+                .main__game_link:hover {
+                    transform: scale(1.05);
+                }
 
                 .main__game_cart {
                     max-width: 323px;

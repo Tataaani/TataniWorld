@@ -416,7 +416,10 @@ a {
     display: none;
   }
   .main .main__about-game .main__container_game {
-    gap: 10px;
+    gap: 16px;
+  }
+  .main .main__about-game .main__container_game .main__game_link:hover {
+    transform: scale(1.05);
   }
   .main .main__about-game .main__container_game .main__game_cart {
     max-width: 323px;
