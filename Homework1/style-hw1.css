@@ -51,7 +51,7 @@ a {
   padding-bottom: 48px;
   box-sizing: border-box;
 }
-.header .header__container .header__button {
+.header .header__container .header__button_desktop {
   font: inherit;
   width: 247px;
   height: 66px;
@@ -73,7 +73,7 @@ a {
   letter-spacing: 0%;
   transition: all 1s;
 }
-.header .header__container .header__button:hover {
+.header .header__container .header__button_desktop:hover {
   background-color: transparent;
   color: rgb(0, 0, 0);
   cursor: url("img/cursor.svg"), pointer;
@@ -530,6 +530,11 @@ a {
     background: rgb(32, 32, 39);
   }
 }
+@media (min-width: 768px) {
+  .header .header__container .header__button_mobil-center {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -553,17 +558,41 @@ a {
     box-sizing: border-box;
     line-height: 1.2;
   }
-  .header .header__container .header__button_center {
+  .header .header__container .header__button_mobil-center {
     display: flex;
     justify-content: center;
   }
-  .header .header__container .header__button {
+  .header .header__container .header__button_desktop-center {
+    display: none;
+  }
+  .header .header__container .header__button_mobil {
+    display: block;
     width: 285px;
     height: 55px;
     font-size: 16px;
     line-height: 20px;
     margin-left: 30px;
     padding: 16px 28px 16px 28px;
+    font: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    text-align: center;
+    transition: all 1s;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: 0%;
+    transition: all 1s;
+  }
+  .header .header__container .header__button_mobil:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: url("img/cursor.svg"), pointer;
   }
   .header .header__star1 {
     width: 35px;

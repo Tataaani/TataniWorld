@@ -54,7 +54,7 @@ a {
             box-sizing: border-box;
         }
 
-        .header__button {
+        .header__button_desktop {
             font: inherit;
             width: 247px;
             height: 66px;
@@ -77,11 +77,12 @@ a {
             transition: all 1s;
         }
 
-        .header__button:hover {
+        .header__button_desktop:hover {
             background-color: transparent;
             color: rgba(0, 0, 0, 1);
             cursor: url("img/cursor.svg"), pointer;
         }
+
     }
 
     .header__star-big {
