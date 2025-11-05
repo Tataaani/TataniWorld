@@ -17,4 +17,7 @@ let d = 105;
 let e = 5;
 (d > 100 || e > 100) ? console.log(`Верно`) : console.log(`Неверно`);
 
-
+// Задание 4
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
