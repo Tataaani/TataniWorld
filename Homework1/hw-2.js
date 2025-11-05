@@ -12,6 +12,9 @@ else {
 let c = 2;
 (c > 0 && c < 10) ? console.log(`Верно`) : console.log(`Неверно`);
 
-
+// Задание 3
+let d = 105;
+let e = 5;
+(d > 100 || e > 100) ? console.log(`Верно`) : console.log(`Неверно`);
 
 
