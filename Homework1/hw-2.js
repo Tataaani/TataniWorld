@@ -9,5 +9,9 @@ else {
 };
 
 // Задание 2
+let c = 2;
+(c > 0 && c < 10) ? console.log(`Верно`) : console.log(`Неверно`);
+
+
 
 
