@@ -49,3 +49,19 @@ switch (monthNumber) {
         console.log(`Такого месяца не существует`)
         break;
 }
+
+// Дополнительные задания
+// Задание 1
+let chetNechet = prompt(`Пожалуйста, введите любое число`);
+
+if (isNaN(chetNechet)) {
+    console.log("не является корректным числом");
+} else {
+    console.log("является числом");
+};
+
+if (chetNechet % 2 === 0) {
+    alert(`${chetNechet} - четное число`);
+} else {
+    alert(`${chetNechet} - нечетное число или некорректно введенные данные`);
+};
