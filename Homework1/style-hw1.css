@@ -28,10 +28,10 @@ a {
   position: relative;
   overflow: hidden;
 }
-.header .header__container {
+.header .header-container {
   padding-top: 196px;
 }
-.header .header__container .header__title_big {
+.header .header-container .header-container__titleBig {
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
@@ -40,7 +40,7 @@ a {
   padding-bottom: 24px;
   box-sizing: border-box;
 }
-.header .header__container .header__title {
+.header .header-container .header-container__title {
   max-width: 700px;
   color: rgb(32, 32, 39);
   font-size: 24px;
@@ -51,7 +51,7 @@ a {
   padding-bottom: 48px;
   box-sizing: border-box;
 }
-.header .header__container .header__button_desktop {
+.header .header-container .header-container__buttonDesktop-center {
   font: inherit;
   width: 247px;
   height: 66px;
@@ -73,7 +73,7 @@ a {
   letter-spacing: 0%;
   transition: all 1s;
 }
-.header .header__container .header__button_desktop:hover {
+.header .header-container .header-container__buttonDesktop-center:hover {
   background-color: transparent;
   color: rgb(0, 0, 0);
   cursor: url("img/cursor.svg"), pointer;
@@ -107,7 +107,7 @@ a {
   margin-left: 870px;
 }
 
-.header__poloca-scrolling-text-container {
+.header-poloca {
   height: 90px;
   padding: 27px 49px 27px 49px;
   box-sizing: border-box;
@@ -121,11 +121,11 @@ a {
   overflow: hidden;
   white-space: nowrap;
 }
-.header__poloca-scrolling-text-container .header__scrolling-text {
+.header-poloca .header-poloca__scrolling-text {
   display: inline-block;
   animation: scroll-left 15s linear infinite;
 }
-.header__poloca-scrolling-text-container .header__scrolling-text .header__poloca_title {
+.header-poloca .header-poloca__scrolling-text .header-poloca__title {
   font-family: Montserrat;
   padding: 25px 51px 30px 51px;
   text-align: center;
@@ -138,7 +138,7 @@ a {
   text-align: left;
   text-transform: uppercase;
 }
-.header__poloca-scrolling-text-container .header__scrolling-text .header__star {
+.header-poloca .header-poloca__scrolling-text .header-poloca__star {
   padding-left: 51px;
   padding-right: 51px;
 }
@@ -157,32 +157,33 @@ a {
   background: rgb(32, 32, 39);
   overflow: hidden;
 }
-.main .main__about-game {
+.main .main-aboutGame {
   position: relative;
   padding-top: 94px;
 }
-.main .main__about-game .main__about-star_big {
+.main .main-aboutGame .main-aboutGame__starBig {
   position: absolute;
   max-width: 100%;
   height: auto;
   margin-left: 814px;
   z-index: 2;
 }
-.main .main__about-game .main__about-star_small {
+.main .main-aboutGame .main-aboutGame__starSmall {
   position: absolute;
   overflow: hidden;
   margin-left: -90px;
   margin-top: 676px;
   z-index: 2;
 }
-.main .main__about-game .main__about-star_sred {
+.main .main-aboutGame .main-aboutGame__starSred {
   position: absolute;
   overflow: hidden;
   margin-left: -74px;
   margin-top: 728px;
   z-index: 2;
 }
-.main .main__title {
+.main .main-aboutGame__title,
+.main .main-miniGame__title {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
@@ -190,7 +191,7 @@ a {
   text-align: left;
   padding-bottom: 24px;
 }
-.main .main__mini-title {
+.main .main-aboutGame__mini-title {
   color: white;
   font-size: 24px;
   font-weight: 400;
@@ -203,27 +204,28 @@ a {
   align-items: center;
   padding-bottom: 72px;
 }
-.main .main__title_2 {
+.main .main-aboutGame__title_2,
+.main .main-miniGame__title_2 {
   padding-bottom: 72px;
 }
-.main .main__container_game {
+.main .main-aboutGame__containerForGame {
   display: flex;
   gap: 32px;
 }
-.main .main__container_game .main__game {
+.main .main-aboutGame__containerForGame .main-aboutGame__game {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-bottom: 50px;
   z-index: 3;
 }
-.main .main__container_game .main__game_link {
+.main .main-aboutGame__containerForGame .main-aboutGame__gameLink {
   transition: all 1s;
 }
-.main .main__container_game .main__game_link:hover {
+.main .main-aboutGame__containerForGame .main-aboutGame__gameLink:hover {
   transform: scale(1.1);
 }
-.main .main__container_game .main__game_cart {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart {
   max-width: 378px;
   border-radius: 30px;
   display: flex;
@@ -233,33 +235,33 @@ a {
   background-color: white;
   transition: transform 0.3s ease;
 }
-.main .main__container_game .main__game_cart .main__game_img {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .main-aboutGame__img {
   width: 378px;
   height: 314px;
 }
-.main .main__container_game .main__game_cart .main__game_name {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .main-aboutGame__name {
   padding: 32px 32px 36px 32px;
   box-sizing: border-box;
 }
-.main .main__container_game .main__game_cart .name1 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name1 {
   height: 159px;
 }
-.main .main__container_game .main__game_cart .name2 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name2 {
   height: 198px;
 }
-.main .main__container_game .main__game_cart .name3 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name3 {
   height: 159px;
 }
-.main .main__container_game .main__game_cart .name4 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name4 {
   height: 237px;
 }
-.main .main__container_game .main__game_cart .name5 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name5 {
   height: 198px;
 }
-.main .main__container_game .main__game_cart .name6 {
+.main .main-aboutGame__containerForGame .main-aboutGame__cart .name6 {
   height: 237px;
 }
-.main .main__container_game .main__game_name-p-container {
+.main .main-aboutGame__containerForGame .main-aboutGame__name-p-container {
   width: 108px;
   height: 36px;
   border-radius: 52.58px;
@@ -270,52 +272,52 @@ a {
   margin-bottom: 16px;
   box-sizing: border-box;
 }
-.main .main__container_game .main__game_name-p {
+.main .main-aboutGame__containerForGame .main-aboutGame__name-p {
   color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-align: left;
 }
-.main .main__container_game .main__game_name-h2 {
+.main .main-aboutGame__containerForGame .main-aboutGame__name-h2 {
   color: rgb(32, 32, 39);
   font-size: 32px;
   font-weight: 700;
   text-align: left;
 }
-.main .main__mini-game {
+.main .main-miniGame {
   position: relative;
   padding-top: 46px;
 }
-.main .main__mini-game .main__mini-star_min {
+.main .main-miniGame .main-miniGame__star-min {
   position: absolute;
   overflow: hidden;
   margin-left: 1158px;
   margin-top: 40px;
 }
-.main .main__mini-game .main__mini-star_sred {
+.main .main-miniGame .main-miniGame__star-sred {
   position: absolute;
   overflow: hidden;
   margin-left: 1200px;
   margin-top: 68px;
 }
-.main .main__mini-game .main__star-end_small {
+.main .main-miniGame .main-miniGame__star-end-small {
   position: absolute;
   margin-top: -90px;
   margin-left: 1132px;
 }
-.main .main__mini-game .main__star-end_sred {
+.main .main-miniGame .main-miniGame__star-end-sred {
   position: absolute;
   margin-top: -134px;
   margin-left: 1200px;
 }
-.main .main__container-game_MINI {
+.main .main-miniGame__containerDesktop {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding-bottom: 144px;
 }
-.main .main__container-game_MINI .main__game-mini_cart {
+.main .main-miniGame__containerDesktop .main-miniGame__cart {
   max-width: 1200px;
   border-radius: 30px;
   display: flex;
@@ -323,12 +325,12 @@ a {
   align-items: flex-start;
   background-color: white;
 }
-.main .main__container-game_MINI .main__game-mini_name {
+.main .main-miniGame__containerDesktop .main-miniGame__name {
   width: 601px;
   padding: 48px 48px 0px 48px;
   box-sizing: border-box;
 }
-.main .main__container-game_MINI .main__game-mini_h2 {
+.main .main-miniGame__containerDesktop .main-miniGame__h2 {
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
@@ -337,7 +339,7 @@ a {
   margin-bottom: 24px;
   line-height: 1.2;
 }
-.main .main__container-game_MINI .main__game-mini_p {
+.main .main-miniGame__containerDesktop .main-miniGame__p {
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -345,7 +347,7 @@ a {
   text-align: left;
   margin-bottom: 36px;
 }
-.main .main__container-game_MINI .main__game-mini_button {
+.main .main-miniGame__containerDesktop .main-miniGame__button {
   width: 247px;
   height: 66px;
   display: flex;
@@ -362,7 +364,7 @@ a {
   box-sizing: border-box;
   transition: all 1s;
 }
-.main .main__container-game_MINI .main__game-mini_button:hover {
+.main .main-miniGame__containerDesktop .main-miniGame__button:hover {
   background-color: transparent;
   color: rgb(0, 0, 0);
   cursor: url("img/cursor.svg"), pointer;
@@ -389,7 +391,7 @@ a {
 }
 
 @media (min-width: 1251px) {
-  .header__star-big_mobile {
+  .header__star-big-mobile {
     display: none;
   }
 }
@@ -401,7 +403,7 @@ a {
   .header .header__star-big {
     display: none;
   }
-  .header .header__star-big_mobile {
+  .header .header__star-big-mobile {
     position: absolute;
     top: -100px;
     right: -114px;
@@ -410,41 +412,41 @@ a {
   .header .header__star1 {
     margin-left: -15px;
   }
-  .main .main__about-game .main__about-star_big,
-  .main .main__about-game .main__about-star_small,
-  .main .main__about-game .main__about-star_sred {
+  .main .main-aboutGame .main-aboutGame__starBig,
+  .main .main-aboutGame .main-aboutGame__starSmall,
+  .main .main-aboutGame .main-aboutGame__starSred {
     display: none;
   }
-  .main .main__about-game .main__container_game {
+  .main .main-aboutGame .main-aboutGame__containerForGame {
     gap: 16px;
   }
-  .main .main__about-game .main__container_game .main__game_link:hover {
+  .main .main-aboutGame .main-aboutGame__containerForGame .main-aboutGame__gameLink:hover {
     transform: scale(1.05);
   }
-  .main .main__about-game .main__container_game .main__game_cart {
+  .main .main-aboutGame .main-aboutGame__containerForGame .main-aboutGame__cart {
     max-width: 323px;
   }
-  .main .main__about-game .main__container_game .main__game_img {
+  .main .main-aboutGame .main-aboutGame__containerForGame .main-aboutGame__img {
     max-width: 323px;
   }
-  .main .main__about-game .main__container_game .main__game_name-h2 {
+  .main .main-aboutGame .main-aboutGame__containerForGame .main-aboutGame__name-h2 {
     font-size: 26px;
   }
-  .main .main__mini-game .main__mini-star_min {
+  .main .main-miniGame .main-miniGame__star-min {
     margin-left: 600px;
     margin-top: 0px;
   }
-  .main .main__mini-game .main__mini-star_sred {
+  .main .main-miniGame .main-miniGame__star-sred {
     margin-left: 500px;
     margin-top: 16px;
   }
-  .main .main__mini-game .main__star-end_small,
-  .main .main__mini-game .main__star-end_sred {
+  .main .main-miniGame .main-miniGame__star-end-small,
+  .main .main-miniGame .main-miniGame__star-end-sred {
     display: none;
   }
 }
 @media (min-width: 1025px) {
-  .MOBILE-main__container-game_MINI,
+  .main-miniGame__containerMOBILE,
   .main__mini-star_min-end,
   .main__mini-star_sred-end {
     display: none;
@@ -464,35 +466,35 @@ a {
   .header .header__star4 {
     margin-left: 710px;
   }
-  .main .main__about-game {
+  .main .main-aboutGame {
     display: none;
   }
-  .main .main__mini-game .main__container-game_MINI {
+  .main .main-miniGame .main-miniGame__containerDesktop {
     display: none;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI {
+  .main .main-miniGame .main-miniGame__containerMOBILE {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     padding-bottom: 10px;
     justify-content: center;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_cart-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__cart-mobile {
     border-radius: 27.22px;
     background-color: white;
     width: 343px;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_img-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__img-mobile {
     width: 343px;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 29.04px 29.04px 32.67px 29.04px;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_h2-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__h2-mobile {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
@@ -502,7 +504,7 @@ a {
     padding-bottom: 16px;
     line-height: 1.2;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_p-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__p-mobile {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
@@ -512,7 +514,7 @@ a {
     padding-bottom: 32px;
     line-height: 1.2;
   }
-  .main .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_button-mobile {
+  .main .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__button-mobile {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
@@ -534,7 +536,7 @@ a {
   }
 }
 @media (min-width: 768px) {
-  .header .header__container .header__button_mobil-center {
+  .header .header-container .header-container__buttonMobil {
     display: none;
   }
 }
@@ -546,14 +548,14 @@ a {
   .header {
     height: 648px;
   }
-  .header .header__container {
+  .header .header-container {
     padding-top: 147px;
   }
-  .header .header__container .header__title_big {
+  .header .header-container .header-container__titleBig {
     font-size: 40px;
     text-align: center;
   }
-  .header .header__container .header__title {
+  .header .header-container .header-container__title {
     font-size: 16px;
     text-align: center;
     padding-left: 23px;
@@ -561,14 +563,14 @@ a {
     box-sizing: border-box;
     line-height: 1.2;
   }
-  .header .header__container .header__button_mobil-center {
+  .header .header-container .header-container__buttonMobil {
     display: flex;
     justify-content: center;
   }
-  .header .header__container .header__button_desktop-center {
+  .header .header-container .header-container__buttonDesktop {
     display: none;
   }
-  .header .header__container .header__button_mobil {
+  .header .header-container .header-container__buttonMobil-center {
     display: block;
     width: 285px;
     height: 55px;
@@ -592,7 +594,7 @@ a {
     letter-spacing: 0%;
     transition: all 1s;
   }
-  .header .header__container .header__button_mobil:hover {
+  .header .header-container .header-container__buttonMobil-center:hover {
     background-color: transparent;
     color: rgb(0, 0, 0);
     cursor: url("img/cursor.svg"), pointer;
@@ -624,58 +626,59 @@ a {
   .header__star-big {
     display: none;
   }
-  .header__star-big_mobile {
+  .header__star-big-mobile {
     position: absolute;
     top: -100px;
     right: -114px;
     overflow: hidden;
   }
-  .header__poloca-scrolling-text-container {
+  .header-poloca {
     height: 52px;
     gap: 6;
     padding: 16px 24px 16px 24px;
   }
-  .header__poloca-scrolling-text-container .header__scrolling-text .header__poloca_title {
+  .header-poloca .header-poloca__scrolling-text .header-poloca__title {
     font-size: 16px;
     line-height: 20px;
   }
-  .header__poloca-scrolling-text-container .header__scrolling-text .header__star {
+  .header-poloca .header-poloca__scrolling-text .header-poloca__star {
     width: 19.34px;
     height: 19.34px;
     padding-left: 28px;
     padding-right: 28px;
   }
-  .main__mini-game .main__mini-star_min,
-  .main__mini-game .main__mini-star_sred {
+  .main-miniGame .main-miniGame__star-min,
+  .main-miniGame .main-miniGame__star-sred {
     display: none;
   }
-  .main__mini-game .main__title {
+  .main-miniGame .main-aboutGame__title,
+  .main-miniGame .main-miniGame__title_2 {
     font-size: 40px;
     padding-bottom: 48px;
     text-align: center;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI {
+  .main-miniGame .main-miniGame__containerMOBILE {
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding-bottom: 10px;
     align-content: center;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_cart-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__cart-mobile {
     border-radius: 27.22px;
     background-color: white;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_img-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__img-mobile {
     width: 343px;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 29.04px 29.04px 32.67px 29.04px;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_h2-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__h2-mobile {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
@@ -685,7 +688,7 @@ a {
     padding-bottom: 16px;
     line-height: 1.2;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_p-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__p-mobile {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: 400;
@@ -695,7 +698,7 @@ a {
     padding-bottom: 32px;
     line-height: 1.2;
   }
-  .main__mini-game .MOBILE-main__container-game_MINI .main__game-mini_name-mobile .main__game-mini_button-mobile {
+  .main-miniGame .main-miniGame__containerMOBILE .main-miniGame__name-mobile .main-miniGame__button-mobile {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
