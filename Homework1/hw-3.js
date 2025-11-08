@@ -42,21 +42,21 @@ console.log(`Количество итераций: ${num}`);
 
 // Задание 6
 // Укажите номер первой пятницы месяца (число от 1 до 31, но может быть и 1-7)
-// В данном примере, предположим, первая пятница месяца - 3-е число
-const firstFridayOfMonth = 3;
+// // В данном примере, предположим, первая пятница месяца - 3-е число
+// const firstFridayOfMonth = 3;
 
-// Укажите номер текущего месяца (0-11) и года
-const currentMonth = new Date().getMonth();
-const currentYear = new Date().getFullYear();
+// // Укажите номер текущего месяца (0-11) и года
+// const currentMonth = new Date().getMonth();
+// const currentYear = new Date().getFullYear();
 
-// Выводим сообщение для каждой пятницы месяца
-for (let i = 1; i <= 31; i++) {
-    const date = new Date(currentYear, currentMonth, i);
-    // Проверяем, является ли день пятницей (5 - пятница, 0 - воскресенье)
-    if (date.getDay() === 5) {
-        // Проверяем, является ли день первой пятницей месяца (сдвиг + день от первой пятницы)
-        if (date.getDate() === firstFridayOfMonth || date.getDate() > firstFridayOfMonth) {
-            console.log(`Сегодня пятница, ${date.getDate()}-е число. Необходимо подготовить отчет.`);
-        }
-    }
-}
+// // Выводим сообщение для каждой пятницы месяца
+// for (let i = 1; i <= 31; i++) {
+//     const date = new Date(currentYear, currentMonth, i);
+//     // Проверяем, является ли день пятницей (5 - пятница, 0 - воскресенье)
+//     if (date.getDay() === 5) {
+//         // Проверяем, является ли день первой пятницей месяца (сдвиг + день от первой пятницы)
+//         if (date.getDate() === firstFridayOfMonth || date.getDate() > firstFridayOfMonth) {
+//             console.log(`Сегодня пятница, ${date.getDate()}-е число. Необходимо подготовить отчет.`);
+//         }
+//     }
+// }
