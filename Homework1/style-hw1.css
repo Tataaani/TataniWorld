@@ -743,4 +743,9 @@ a {
     margin-top: 52px;
     margin-left: 284px;
   }
+}
+@media (max-width: 410px) {
+  .main .main-miniGame .main-miniGame__title_2 {
+    text-align: left;
+  }
 }/*# sourceMappingURL=style-hw1.css.map */

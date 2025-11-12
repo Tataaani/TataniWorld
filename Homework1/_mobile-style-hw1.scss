@@ -445,3 +445,13 @@
         }
     }
 }
+
+@media (max-width: 410px) {
+    .main {
+        .main-miniGame {
+            .main-miniGame__title_2 {
+                text-align: left;
+            }
+        }
+    }
+}
