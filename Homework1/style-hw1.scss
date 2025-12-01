@@ -135,7 +135,7 @@ a {
 
     .header-poloca__scrolling-text {
         display: inline-block;
-        animation: scroll-left 15s linear infinite;
+        animation: marquee 15s linear infinite;
 
         .header-poloca__title {
             font-family: Montserrat;
@@ -160,7 +160,7 @@ a {
     }
 
 
-    @keyframes scroll-left {
+    @keyframes marquee {
         from {
             transform: translateX(0%);
             /* Начинаем с видимой справа части */
