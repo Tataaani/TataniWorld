@@ -52,5 +52,20 @@ const evenOdd = (n) => {
 
 evenOdd(Number(prompt(`Введите число для проверки четности`)));
 
+// Задание 3.1
+function SQUARE(c) {
+    let squareNumber = c ** 2;
+    console.log(`${c} в квадрате равна ${squareNumber}`)
+}
 
+SQUARE(Number(prompt(`Введите ваше число для возведения его в квадрат`)));
+
+// Задание 3.2
+function squares(num) {
+    return num ** 2;
+}
+
+const result = squares(Number(prompt(`Введите еще раз ваше число для возведения его в квадрат и последующего сохранения`)));
+
+console.log(`Квадрат вашего числа равен ${result}`);
 
