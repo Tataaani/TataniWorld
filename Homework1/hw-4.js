@@ -40,6 +40,7 @@ let a = Number(prompt(`Введите первое число`));
 let b = Number(prompt(`Введите второе число`));
 alert(`Меньшее из двух чисел ${smallerOfTwoNumber(a, b)}`);
 
+
 // Задание 2
 
 const evenOdd = (n) => {
@@ -52,7 +53,9 @@ const evenOdd = (n) => {
 
 evenOdd(Number(prompt(`Введите число для проверки четности`)));
 
+
 // Задание 3.1
+
 function SQUARE(c) {
     let squareNumber = c ** 2;
     console.log(`${c} в квадрате равна ${squareNumber}`)
@@ -60,7 +63,9 @@ function SQUARE(c) {
 
 SQUARE(Number(prompt(`Введите ваше число для возведения его в квадрат`)));
 
+
 // Задание 3.2
+
 function squares(num) {
     return num ** 2;
 }
@@ -69,3 +74,36 @@ const result = squares(Number(prompt(`Введите еще раз ваше чи
 
 console.log(`Квадрат вашего числа равен ${result}`);
 
+// Задание 4
+
+// const howOld = (years) => {
+//     if (years < 0) {
+//         alert(`Вы ввели неправильное значение`);
+//         return;
+//     } if (years >= 0 && years <= 12) {
+//         alert(`Привет, друг!`);
+//     } else {
+//         alert(`Добро пожаловать!`)
+//     }
+// }
+// howOld(Number(prompt(`Сколько Вам лет?`)));
+
+const howOld = () => {
+    let years;
+    let isValid = false;
+
+    while (!isValid) {
+        years = Number(prompt(`Сколько Вам лет?`));
+
+        if (years < 0 || isNaN(years)) {
+            alert(`Вы ввели неправильное значение`);
+        } else if (years >= 0 && years <= 12) {
+            alert(`Привет, друг!`);
+            isValid = true; 
+        } else {
+            alert(`Добро пожаловать!`);
+            isValid = true; 
+        }
+    }
+}
+howOld();
