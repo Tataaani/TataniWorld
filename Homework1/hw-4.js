@@ -40,3 +40,17 @@ let a = Number(prompt(`Введите первое число`));
 let b = Number(prompt(`Введите второе число`));
 alert(`Меньшее из двух чисел ${smallerOfTwoNumber(a, b)}`);
 
+// Задание 2
+
+const evenOdd = (n) => {
+    if (n % 2 == 0) {
+        alert(`Число четное`);
+    } else {
+        alert(`Число нечетное`)
+    }
+}
+
+evenOdd(Number(prompt(`Введите число для проверки четности`)));
+
+
+
