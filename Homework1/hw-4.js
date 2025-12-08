@@ -80,7 +80,7 @@ console.log(`Квадрат вашего числа равен ${result}`);
 //     if (years < 0) {
 //         alert(`Вы ввели неправильное значение`);
 //         return;
-//     } if (years >= 0 && years <= 12) {
+//     } else if (years >= 0 && years <= 12) {
 //         alert(`Привет, друг!`);
 //     } else {
 //         alert(`Добро пожаловать!`)
@@ -99,11 +99,27 @@ const howOld = () => {
             alert(`Вы ввели неправильное значение`);
         } else if (years >= 0 && years <= 12) {
             alert(`Привет, друг!`);
-            isValid = true; 
+            isValid = true;
         } else {
             alert(`Добро пожаловать!`);
-            isValid = true; 
+            isValid = true;
         }
     }
 }
 howOld();
+
+// Задание 5
+
+function proNumbers() {
+    const num1 = Number(prompt(`Введи любое число (ничего другого!)`));
+    const num2 = Number(prompt(`Введи второе число (не абы что!)`));
+
+    if (isNaN(num1) || isNaN(num2)) {
+        console.log(`Одно или оба значения не являются числом`);
+        return;
+    } else {
+        return num1 * num2;
+    };
+}
+console.log(proNumbers());
+
