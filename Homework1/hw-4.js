@@ -123,3 +123,17 @@ function proNumbers() {
 }
 console.log(proNumbers());
 
+// Задание 6
+
+function isItNumber() {
+    const ex6 = Number(prompt(`не кипятись, но нам снова от тебя нужно число😅`));
+
+    if (isNaN(ex6)) {
+        console.log(`Переданный параметр не является числом`);
+        return;
+    } else {
+        const work = ex6 ** 3
+        return `${ex6} в кубе равняется ${work}`
+    };
+}
+console.log(isItNumber());
