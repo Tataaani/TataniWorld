@@ -137,3 +137,31 @@ function isItNumber() {
     };
 }
 console.log(isItNumber());
+
+// Задание 7
+
+const p = 3.14;
+
+function getArea() {
+    return (this.radius ** 2) * p;
+};
+
+function getPerimeter() {
+    return 2 * this.radius * p;
+};
+
+const circle1 = {
+    radius: Number(prompt(`Придумай радиус для 1-го объекта`)),
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: Number(prompt(`Придумай радиус для 2-го объекта`)),
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+}
+
+console.log(`С радиусом ${circle1.radius} площадь круга будет равна ${circle1.getArea()}, а периметр - ${circle1.getPerimeter()}`);
+
+console.log(`С радиусом ${circle2.radius} площадь круга будет равна ${circle2.getArea()}, а периметр - ${circle2.getPerimeter()}`);
