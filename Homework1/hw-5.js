@@ -107,4 +107,15 @@ console.log(task8);
 
 const task9 = [[1, 2, 3], [4, 5, 6]];
 const general = [].concat(...task9);
-console.log(general); 
+console.log(general);
+
+// Задача 10
+
+const task10 = [3, 7, 1, 9];
+
+for (let i = 0; i < task10.length - 1; i++) {
+    const current = task10[i];
+    const next = task10[i + 1];
+    const sum = current + next;
+    console.log(`Итерация ${i}: Сумма ${current} + ${next} = ${sum}`);
+}
