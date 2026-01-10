@@ -103,4 +103,8 @@ task8 = task8.reverse();
 task8 = task8.join('');
 console.log(task8);
 
+// Задача 9
 
+const task9 = [[1, 2, 3], [4, 5, 6]];
+const general = [].concat(...task9);
+console.log(general); 
