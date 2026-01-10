@@ -97,4 +97,10 @@ do {
 } while (again);
 
 // Задача 8
+let task8 = 'abcdef';
+task8 = task8.split('');
+task8 = task8.reverse();
+task8 = task8.join('');
+console.log(task8);
+
 
