@@ -153,3 +153,33 @@ const negativeNumbers = getNegativeNumbers(whole);
 
 console.log(negativeNumbers);
 
+// Задача 14
+
+const originalArray = [];
+
+for (let i = 0; i < 10; i++) {
+    const randomNumber = Math.floor(Math.random() * 11);
+    originalArray.push(randomNumber);
+}
+
+const evenNumbersArray = originalArray.filter(num => num % 2 === 0);
+
+console.log(`Исходный массив: ${originalArray}`);
+console.log(`Массив с четными значениями: ${evenNumbersArray}`);
+
+// Задача 15
+
+const task15 = [];
+
+for (let i = 0; i < 6; i++) {
+    const randomiNumber = Math.floor(Math.random() * 10) + 1;
+    task15.push(randomiNumber);
+}
+
+const totalSum = task15.reduce((total, currentValue) => total + currentValue, 0);
+
+const arithmeticMean = totalSum / task15.length;
+
+console.log(`Сгенерированный массив: ${task15}`);
+console.log(`Сумма всех элементов: ${totalSum}`);
+console.log(`Среднее арифметическое: ${arithmeticMean}`); 
