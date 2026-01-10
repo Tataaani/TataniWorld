@@ -20,7 +20,7 @@ let simpleArithmetic = () => {
 
         const randomTask = tasks[randomIndex];
 
-        const userAnswer = prompt(`Ваша случайная задача: ${randomTask.question}  
+        const userAnswer = prompt(`Ваша случайная задача: ${randomTask.question}
     Ваш ответ:`);
 
         if (userAnswer === randomTask.answer) {
@@ -119,3 +119,25 @@ for (let i = 0; i < task10.length - 1; i++) {
     const sum = current + next;
     console.log(`Итерация ${i}: Сумма ${current} + ${next} = ${sum}`);
 }
+
+// Задача 11
+
+const getSquareNumber = (integersArray) => {
+    return integersArray.map(integer => integer ** 2);
+}
+
+const integers = [5, 3, 8, 1];
+const squares = getSquareNumber(integers)
+
+console.log(squares);
+
+// Задача 12
+
+const getWordsLengths = (wordsArray) => {
+    return wordsArray.map(word => word.length);
+};
+
+const words = ["Таня", "Ангелина", "Рамиль", "Оля"];
+const lengths = getWordsLengths(words);
+
+console.log(lengths);
