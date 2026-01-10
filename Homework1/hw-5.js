@@ -1,0 +1,84 @@
+// Описание игры для сайта («Простая арифметика»)
+
+let simpleArithmetic = () => {
+    alert(`😒Простая арифметика🥱`);
+
+    const tasks = [
+        { question: "Сколько будет 5 + 3 ?", answer: "8" },
+        { question: "Какое число получится при вычитании 2 из 10 ?", answer: "8" },
+        { question: "При умножнии 4 на 7 получится...", answer: "28" },
+        { question: "Сколько будет, если 20 поделить на 4 ?", answer: "5" },
+    ];
+
+    let playAgain;
+
+    // Генерация случайного индекса: Math.random() дает число от 0 до 0.999. Умножаем на длину массива, чтобы получить диапазон до 3.999. Math.floor() округляет вниз до целого числа (0, 1, 2, 3)
+
+    do {
+
+        const randomIndex = Math.floor(Math.random() * tasks.length);
+
+        const randomTask = tasks[randomIndex];
+
+        const userAnswer = prompt(`Ваша случайная задача: ${randomTask.question}  
+    Ваш ответ:`);
+
+        if (userAnswer === randomTask.answer) {
+            alert("Правильно!");
+        } else {
+            alert(`Неверно. Правильный ответ: ${randomTask.answer}`);
+        }
+
+        playAgain = confirm("Хотите продолжить играть?");
+
+    } while (playAgain);
+
+    alert("Спасибо за игру!");
+}
+
+
+// Задача 1
+
+const numbs = [1, 5, 4, 10, 0, 3];
+for (let i = 0; i < numbs.length; i++) {
+    console.log(numbs[i]);
+    if (numbs[i] == 10) break;
+};
+
+// Задача 2
+
+const numbers = [1, 5, 4, 10, 0, 3];
+const index = numbers.indexOf(4);
+console.log(index);
+
+// Задача 3
+let massiv = [1, 3, 5, 10, 20];
+massiv = massiv.join(` `);
+console.log(massiv);
+
+// Задача 4
+
+let mainArray = [];
+for (let i = 0; i < 3; i++) {
+    let row = [];
+    for (let j = 0; j < 3; j++) {
+        row.push(1);
+    }
+    mainArray.push(row);
+}
+console.log(mainArray);
+
+// Задача 5
+
+let ones = [1, 1, 1];
+ones.push(2, 2, 2);
+console.log(ones);
+
+// Задача 6
+
+let mas = [9, 8, 7, 'a', 6, 5];
+let masSort = mas.sort();
+let sortDelet = masSort.pop();
+console.log(masSort);
+
+// Задача 7
