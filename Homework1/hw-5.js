@@ -82,3 +82,19 @@ let sortDelet = masSort.pop();
 console.log(masSort);
 
 // Задача 7
+let task7 = [9, 8, 7, 6, 5];
+let again;
+
+do {
+    let isFound = Number(prompt(`Попробуйте угадать число, которое мы загадали. Подсказка: число от 1 до 10.`));
+
+    if (task7.includes(isFound)) {
+        alert("Угадал!");
+    } else {
+        alert("Не угадал!");
+    }
+    again = confirm("Попробуешь заново?");
+} while (again);
+
+// Задача 8
+
