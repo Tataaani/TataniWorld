@@ -141,3 +141,15 @@ const words = ["Таня", "Ангелина", "Рамиль", "Оля"];
 const lengths = getWordsLengths(words);
 
 console.log(lengths);
+
+// Задача 13
+
+const getNegativeNumbers = (numbersArray) => {
+    return numbersArray.filter(num => num < 0);
+};
+
+const whole = [-1, 5, 0, -3, 8];
+const negativeNumbers = getNegativeNumbers(whole);
+
+console.log(negativeNumbers);
+
