@@ -2,31 +2,50 @@
 
 let simpleArithmetic = () => {
     alert(`😒Простая арифметика🥱`);
-
-    const tasks = [
-        { question: "Сколько будет 5 + 3 ?", answer: "8" },
-        { question: "Какое число получится при вычитании 2 из 10 ?", answer: "8" },
-        { question: "При умножнии 4 на 7 получится...", answer: "28" },
-        { question: "Сколько будет, если 20 поделить на 4 ?", answer: "5" },
-    ];
-
     let playAgain;
 
-    // Генерация случайного индекса: Math.random() дает число от 0 до 0.999. Умножаем на длину массива, чтобы получить диапазон до 3.999. Math.floor() округляет вниз до целого числа (0, 1, 2, 3)
-
     do {
+        const operators = ['+', '-', '*', '/'];
+        const operator = operators[Math.floor(Math.random() * operators.length)];
 
-        const randomIndex = Math.floor(Math.random() * tasks.length);
+        let num1 = Math.floor(Math.random() * 10) + 1;
+        let num2 = Math.floor(Math.random() * 10) + 1;
+        let correctAnswer;
+        let taskString;
 
-        const randomTask = tasks[randomIndex];
+        switch (operator) {
+            case '+':
+                correctAnswer = num1 + num2;
+                taskString = `${num1} + ${num2}`;
+                break;
+            case '-':
+                correctAnswer = num1 - num2;
+                taskString = `${num1} - ${num2}`;
+                break;
+            case '*':
+                correctAnswer = num1 * num2;
+                taskString = `${num1} * ${num2}`;
+                break;
+            case '/':
+                // Чтобы деление всегда было целое сначала перемножаем, чтобы получить делимое
+                const product = num1 * num2;
+                correctAnswer = num1;
+                taskString = `${product} / ${num2}`;
+                break;
+        }
 
-        const userAnswer = prompt(`Ваша случайная задача: ${randomTask.question}
-    Ваш ответ:`);
+        const userAnswer = prompt(`Решите задачу: ${taskString}`);
 
-        if (userAnswer === randomTask.answer) {
-            alert("Правильно!");
+        if (userAnswer === null) {
+            alert("Игра окончена.");
+            return;
+        }
+
+        // Преобразуем ввод в число и сравниваем с правильным ответом
+        if (Number(userAnswer) === correctAnswer) {
+            alert("Верно! Поздравляю🥳");
         } else {
-            alert(`Неверно. Правильный ответ: ${randomTask.answer}`);
+            alert(`Ошибка🤯. Правильный ответ был: ${correctAnswer}`);
         }
 
         playAgain = confirm("Хотите продолжить играть?");
@@ -37,8 +56,47 @@ let simpleArithmetic = () => {
 }
 
 
-// Задача 1
 
+// let simpleArithmetic = () => {
+//     alert(`😒Простая арифметика🥱`);
+
+//     const tasks = [
+//         { question: "Сколько будет 5 + 3 ?", answer: "8" },
+//         { question: "Какое число получится при вычитании 2 из 10 ?", answer: "8" },
+//         { question: "При умножнии 4 на 7 получится...", answer: "28" },
+//         { question: "Сколько будет, если 20 поделить на 4 ?", answer: "5" },
+//     ];
+
+//     let playAgain;
+
+//     // Генерация случайного индекса: Math.random() дает число от 0 до 0.999. Умножаем на длину массива, чтобы получить диапазон до 3.999. Math.floor() округляет вниз до целого числа (0, 1, 2, 3)
+
+//     do {
+
+//         const randomIndex = Math.floor(Math.random() * tasks.length);
+
+//         const randomTask = tasks[randomIndex];
+
+//         const userAnswer = prompt(`Ваша случайная задача: ${randomTask.question}
+//     Ваш ответ:`);
+
+//         if (userAnswer === randomTask.answer) {
+//             alert("Правильно!");
+//         } else {
+//             alert(`Неверно. Правильный ответ: ${randomTask.answer}`);
+//         }
+
+//         playAgain = confirm("Хотите продолжить играть?");
+
+//     } while (playAgain);
+
+//     alert("Спасибо за игру!");
+// }
+alert("Спасибо за игру!");
+
+
+
+// Задача 1
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
     console.log(numbs[i]);
@@ -127,9 +185,9 @@ const getSquareNumber = (integersArray) => {
 }
 
 const integers = [5, 3, 8, 1];
-const squares = getSquareNumber(integers)
+const squar = getSquareNumber(integers)
 
-console.log(squares);
+console.log(squar);
 
 // Задача 12
 

@@ -1,6 +1,6 @@
 // Описание игры для сайта («Угадай число»)
 
-let guessTheNumber = () => {
+let guesTheNumber = () => {
     alert(`🧐Угадай чисто!🧐`);
 
     const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -20,7 +20,7 @@ let guessTheNumber = () => {
         }
     }
     if (confirm('🕹️Сыграть ещё раз?🕹️')) {
-        guessTheNumber();
+        guesTheNumber();
     }
 
 }
