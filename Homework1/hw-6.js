@@ -77,8 +77,60 @@ quiz();
 
 let str = 'js';
 str = str.toUpperCase();
-console.log(str); 
+console.log(str);
 
 
 // Задание 2
 
+function filterPrefix(array, searchString) {
+
+    const lowerSearch = searchString.toLowerCase();
+    return array.filter(item => {
+        return item.toLowerCase().startsWith(lowerSearch);
+    });
+}
+const sity = ['Москва', 'Мурманск', 'Санкт-Петербург', 'Магадан', 'казань'];
+const result = filterPrefix(sity, 'М');
+console.log(result);
+
+
+// Задание 3
+
+let number = 32.58884;
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
+console.log(Math.round(number));
+
+
+// Задание 4
+
+const numbers = [52, 53, 49, 77, 21, 32];
+console.log(Math.min(...numbers));
+console.log(Math.max(...numbers));
+
+
+// Задание 5
+
+const num = Math.floor(Math.random() * 10) + 1;
+console.log(num);
+
+
+// Задание 6
+
+function getRandomArray(n) {
+    const result = [];
+    const length = Math.floor(n / 2);
+
+    for (let i = 0; i < length; i++) {
+        const randomNum = Math.floor(Math.random() * (n + 1));
+        result.push(randomNum);
+    }
+    return result;
+}
+
+const n = 10;
+const randomArray = getRandomArray(n);
+
+console.log(`Исходное число: ${n}`);
+console.log(`Длина массива: ${randomArray.length}`);
+console.log(`Массив: ${randomArray}`);
