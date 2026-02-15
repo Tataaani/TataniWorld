@@ -69,7 +69,6 @@ function quiz() {
 
     alert(`Спасибо за игру! Викторина окончена!\nВаш результат: ${score} из ${quizMassif.length}`);
 }
-
 quiz();
 
 
@@ -134,3 +133,47 @@ const randomArray = getRandomArray(n);
 console.log(`Исходное число: ${n}`);
 console.log(`Длина массива: ${randomArray.length}`);
 console.log(`Массив: ${randomArray}`);
+
+
+// Задание 7
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandom(5, 15));
+
+
+// Задание 8
+
+console.log(new Date().toLocaleDateString());
+
+
+// Задание 9
+
+const currentDate = new Date();
+const futureDate = new Date(currentDate);
+futureDate.setDate(futureDate.getDate() + 73);
+
+console.log(`Текущая дета: ${currentDate.toLocaleDateString()}`);
+console.log(`Дата через 73 дня: ${futureDate.toLocaleDateString()}`);
+
+
+// Задание 10
+
+function getFormattedDate(date) {
+
+    const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+    const weekdayOptions = { weekday: 'long' };
+
+    const dateString = date.toLocaleDateString('ru-RU', dateOptions);
+    const weekdayString = date.toLocaleDateString('ru-RU', weekdayOptions);
+
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+
+    return `Дата: ${dateString} — это ${weekdayString}.\nВремя: ${hours}:${minutes}:${seconds}`;
+}
+
+const now = new Date();
+console.log(getFormattedDate(now));
