@@ -21,8 +21,6 @@ function reverseText() {
     alert("Спасибо за игру!");
 }
 
-reverseText();
-
 
 // Описание игры для сайта («Простая викторина»)
 
@@ -69,8 +67,6 @@ function quiz() {
 
     alert(`Спасибо за игру! Викторина окончена!\nВаш результат: ${score} из ${quizMassif.length}`);
 }
-quiz();
-
 
 // Задание 1
 
