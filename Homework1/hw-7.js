@@ -2,18 +2,20 @@
 
 let rockPaperScissors = () => {
     alert(`Камень ✊, ножницы ✌️, бумага 🤚`);
+    const userName = prompt(`Как Вас зовут?`);
     let playAgain;
 
     do {
         const options = ["камень", "ножницы", "бумага"];
 
-        const userName = prompt(`Как Вас зовут?`);
         const userChoice = prompt(`Выберите один вариант: камень, ножницы или бумага?`).toLowerCase();
         // .toLowerCase(): "Камень" = "камень" 
 
         if (!options.includes(userChoice)) {
-            console.log(`${userName}, выбери что-то из списка: камень, ножницы или бумага!`);
-            return;
+            alert(`${userName}, к сожалению Вы ввели что-то некорректное. Попробуйте снова!`);
+            playAgain = true;
+            continue;
+            // ДЛя себя: "let playAgain" по умолчанию равна undefined. Для цикла while значение undefined — это всё равно что ложь (false). поэтому continue не начнет заново и попрощается без "playAgain = true;"
         }
 
         const randomIndex = Math.floor(Math.random() * options.length);
@@ -30,6 +32,9 @@ let rockPaperScissors = () => {
         } else {
             alert(`Твой выбор: ${userChoice}.\nВыбор компьютера: ${computerChoice}.\nВ этот раз компьютер оказался сильнее. 🤖`);
         }
+
+        playAgain = confirm("Хотите продолжить играть?");
+
     } while (playAgain);
 
     alert("Спасибо за игру!");
