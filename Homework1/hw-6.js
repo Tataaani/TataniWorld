@@ -1,6 +1,7 @@
 // Описание игры для сайта («Переверни текст»)
 
-function reverseText() {
+reverseText = () => {
+    console.log("Кнопка нажата, функция вызвана!");
     alert(`🔄Переверни текст🔙`);
     let playAgain;
     do {
@@ -25,8 +26,8 @@ function reverseText() {
 // Описание игры для сайта («Простая викторина»)
 
 
-function quiz() {
-
+quiz = () => {
+    console.log("Кнопка нажата, функция вызвана!");
     alert(`✅Викторинааааа❎`);
 
     const quizMassif = [
@@ -68,108 +69,110 @@ function quiz() {
     alert(`Спасибо за игру! Викторина окончена!\nВаш результат: ${score} из ${quizMassif.length}`);
 }
 
-// Задание 1
+{
+    // Задание 1
 
-let str = 'js';
-str = str.toUpperCase();
-console.log(str);
-
-
-// Задание 2
-
-function filterPrefix(array, searchString) {
-
-    const lowerSearch = searchString.toLowerCase();
-    return array.filter(item => {
-        return item.toLowerCase().startsWith(lowerSearch);
-    });
-}
-const sity = ['Москва', 'Мурманск', 'Санкт-Петербург', 'Магадан', 'казань'];
-const result = filterPrefix(sity, 'М');
-console.log(result);
+    let str = 'js';
+    str = str.toUpperCase();
+    console.log(str);
 
 
-// Задание 3
+    // Задание 2
 
-let number = 32.58884;
-console.log(Math.floor(number));
-console.log(Math.ceil(number));
-console.log(Math.round(number));
+    function filterPrefix(array, searchString) {
 
-
-// Задание 4
-
-const numbers = [52, 53, 49, 77, 21, 32];
-console.log(Math.min(...numbers));
-console.log(Math.max(...numbers));
-
-
-// Задание 5
-
-const num = Math.floor(Math.random() * 10) + 1;
-console.log(num);
-
-
-// Задание 6
-
-function getRandomArray(n) {
-    const result = [];
-    const length = Math.floor(n / 2);
-
-    for (let i = 0; i < length; i++) {
-        const randomNum = Math.floor(Math.random() * (n + 1));
-        result.push(randomNum);
+        const lowerSearch = searchString.toLowerCase();
+        return array.filter(item => {
+            return item.toLowerCase().startsWith(lowerSearch);
+        });
     }
-    return result;
+    const sity = ['Москва', 'Мурманск', 'Санкт-Петербург', 'Магадан', 'казань'];
+    const result = filterPrefix(sity, 'М');
+    console.log(result);
+
+
+    // Задание 3
+
+    let number = 32.58884;
+    console.log(Math.floor(number));
+    console.log(Math.ceil(number));
+    console.log(Math.round(number));
+
+
+    // Задание 4
+
+    const numbers = [52, 53, 49, 77, 21, 32];
+    console.log(Math.min(...numbers));
+    console.log(Math.max(...numbers));
+
+
+    // Задание 5
+
+    const num = Math.floor(Math.random() * 10) + 1;
+    console.log(num);
+
+
+    // Задание 6
+
+    function getRandomArray(n) {
+        const result = [];
+        const length = Math.floor(n / 2);
+
+        for (let i = 0; i < length; i++) {
+            const randomNum = Math.floor(Math.random() * (n + 1));
+            result.push(randomNum);
+        }
+        return result;
+    }
+
+    const n = 10;
+    const randomArray = getRandomArray(n);
+
+    console.log(`Исходное число: ${n}`);
+    console.log(`Длина массива: ${randomArray.length}`);
+    console.log(`Массив: ${randomArray}`);
+
+
+    // Задание 7
+
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    console.log(getRandom(5, 15));
+
+
+    // Задание 8
+
+    console.log(new Date().toLocaleDateString());
+
+
+    // Задание 9
+
+    const currentDate = new Date();
+    const futureDate = new Date(currentDate);
+    futureDate.setDate(futureDate.getDate() + 73);
+
+    console.log(`Текущая дета: ${currentDate.toLocaleDateString()}`);
+    console.log(`Дата через 73 дня: ${futureDate.toLocaleDateString()}`);
+
+
+    // Задание 10
+
+    function getFormattedDate(date) {
+
+        const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+        const weekdayOptions = { weekday: 'long' };
+
+        const dateString = date.toLocaleDateString('ru-RU', dateOptions);
+        const weekdayString = date.toLocaleDateString('ru-RU', weekdayOptions);
+
+        const hours = String(date.getHours()).padStart(2, '0');
+        const minutes = String(date.getMinutes()).padStart(2, '0');
+        const seconds = String(date.getSeconds()).padStart(2, '0');
+
+        return `Дата: ${dateString} — это ${weekdayString}.\nВремя: ${hours}:${minutes}:${seconds}`;
+    }
+
+    const now = new Date();
+    console.log(getFormattedDate(now));
 }
-
-const n = 10;
-const randomArray = getRandomArray(n);
-
-console.log(`Исходное число: ${n}`);
-console.log(`Длина массива: ${randomArray.length}`);
-console.log(`Массив: ${randomArray}`);
-
-
-// Задание 7
-
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-console.log(getRandom(5, 15));
-
-
-// Задание 8
-
-console.log(new Date().toLocaleDateString());
-
-
-// Задание 9
-
-const currentDate = new Date();
-const futureDate = new Date(currentDate);
-futureDate.setDate(futureDate.getDate() + 73);
-
-console.log(`Текущая дета: ${currentDate.toLocaleDateString()}`);
-console.log(`Дата через 73 дня: ${futureDate.toLocaleDateString()}`);
-
-
-// Задание 10
-
-function getFormattedDate(date) {
-
-    const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
-    const weekdayOptions = { weekday: 'long' };
-
-    const dateString = date.toLocaleDateString('ru-RU', dateOptions);
-    const weekdayString = date.toLocaleDateString('ru-RU', weekdayOptions);
-
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const seconds = String(date.getSeconds()).padStart(2, '0');
-
-    return `Дата: ${dateString} — это ${weekdayString}.\nВремя: ${hours}:${minutes}:${seconds}`;
-}
-
-const now = new Date();
-console.log(getFormattedDate(now));
