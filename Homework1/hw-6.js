@@ -1,73 +1,73 @@
-// Описание игры для сайта («Переверни текст»)
+// // Описание игры для сайта («Переверни текст»)
 
-reverseText = () => {
-    console.log("Кнопка нажата, функция вызвана!");
-    alert(`🔄Переверни текст🔙`);
-    let playAgain;
-    do {
-        const userText = prompt("Введите текст, который нужно перевернуть:");
+// reverseText = () => {
+//     console.log("Кнопка нажата, функция вызвана!");
+//     alert(`🔄Переверни текст🔙`);
+//     let playAgain;
+//     do {
+//         const userText = prompt("Введите текст, который нужно перевернуть:");
 
-        if (userText === null || userText.trim() === "") {
-            alert(`Вы ничего не ввели, поэтому игра завершена. Возвращайтесь и попробуйте заново!`);
-            return;
-        }
+//         if (userText === null || userText.trim() === "") {
+//             alert(`Вы ничего не ввели, поэтому игра завершена. Возвращайтесь и попробуйте заново!`);
+//             return;
+//         }
 
-        const flipped = userText.split('').reverse().join('');
-        alert(`Ваш перевернутый текст: ${flipped}`);
+//         const flipped = userText.split('').reverse().join('');
+//         alert(`Ваш перевернутый текст: ${flipped}`);
 
-        playAgain = confirm("Хотите продолжить играть?");
+//         playAgain = confirm("Хотите продолжить играть?");
 
-    } while (playAgain);
+//     } while (playAgain);
 
-    alert("Спасибо за игру!");
-}
-
-
-// Описание игры для сайта («Простая викторина»)
+//     alert("Спасибо за игру!");
+// }
 
 
-quiz = () => {
-    console.log("Кнопка нажата, функция вызвана!");
-    alert(`✅Викторинааааа❎`);
+// // Описание игры для сайта («Простая викторина»)
 
-    const quizMassif = [
-        {
-            question: "Какого цвета небо?",
-            options: ["1. Красный", "2. Синий", "3. Зеленый"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько дней в неделе?",
-            options: ["1. Шесть", "2. Семь", "3. Восемь"],
-            correctAnswer: 2
-        },
-        {
-            question: "Сколько у человека пальцев на одной руке?",
-            options: ["1. Четыре", "2. Пять", "3. Шесть"],
-            correctAnswer: 2
-        }
-    ];
 
-    let score = 0;
+// quiz = () => {
+//     console.log("Кнопка нажата, функция вызвана!");
+//     alert(`✅Викторинааааа❎`);
 
-    for (let i = 0; i < quizMassif.length; i++) {
+//     const quizMassif = [
+//         {
+//             question: "Какого цвета небо?",
+//             options: ["1. Красный", "2. Синий", "3. Зеленый"],
+//             correctAnswer: 2
+//         },
+//         {
+//             question: "Сколько дней в неделе?",
+//             options: ["1. Шесть", "2. Семь", "3. Восемь"],
+//             correctAnswer: 2
+//         },
+//         {
+//             question: "Сколько у человека пальцев на одной руке?",
+//             options: ["1. Четыре", "2. Пять", "3. Шесть"],
+//             correctAnswer: 2
+//         }
+//     ];
 
-        const messageForUser = `${quizMassif[i].question}\n${quizMassif[i].options.join('\n')}`;
+//     let score = 0;
 
-        const userAnswer = prompt(messageForUser);
+//     for (let i = 0; i < quizMassif.length; i++) {
 
-        if (userAnswer === null) {
-            alert("А у кого-то нервы не выдержали🤪");
-            return;
-        }
+//         const messageForUser = `${quizMassif[i].question}\n${quizMassif[i].options.join('\n')}`;
 
-        if (Number(userAnswer) === quizMassif[i].correctAnswer) {
-            score++;
-        }
-    }
+//         const userAnswer = prompt(messageForUser);
 
-    alert(`Спасибо за игру! Викторина окончена!\nВаш результат: ${score} из ${quizMassif.length}`);
-}
+//         if (userAnswer === null) {
+//             alert("А у кого-то нервы не выдержали🤪");
+//             return;
+//         }
+
+//         if (Number(userAnswer) === quizMassif[i].correctAnswer) {
+//             score++;
+//         }
+//     }
+
+//     alert(`Спасибо за игру! Викторина окончена!\nВаш результат: ${score} из ${quizMassif.length}`);
+// }
 
 {
     // Задание 1
